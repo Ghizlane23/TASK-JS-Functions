@@ -3,11 +3,10 @@
  * Create a function named `printName`
  * - that just prints your name on the screen
  */
-function printName() {
-  console.log("My name is Ghizlane");
+function printName(name) {
+  console.log(name);
 }
-printName();
-
+printName("ghizlane");
 /**
  * Task 2:
  * Create a function named `printAge`
@@ -15,9 +14,9 @@ printName();
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
-function printAge(year) {
-  let Age = 2023 - year;
-  console.log(`My age is ${Age}`);
+function printAge(birth) {
+  let age = 2023 - birth;
+  console.log(`you age is ${age}`);
 }
 printAge(1987);
 /**
@@ -30,29 +29,30 @@ printAge(1987);
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
-function printHello(name, language) {
-  if (language === "en") {
+function printHello(name, lan) {
+  if (lan == "en") {
     console.log(`Hello ${name}`);
-  } else if (language === "es") {
+  } else if (lan == "es") {
     console.log(`Hola ${name}`);
-  } else if (language === "fr") {
+  } else if (lan == "fr") {
     console.log(`Bonjour ${name}`);
-  } else if (language === "tr") {
-    console.log(`Marhaba ${name}`);
+  } else {
+    console.log(`Merhaba ${name}`);
   }
 }
-printHello("ghizlane", "en");
+printHello("ghizlane", "fr");
 /**
  * Task 4:
  * Create a function named `printMax`
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
  */
-function printMax(num1, num2) {
-  if (num1 > num2) {
-    console.log(`${num1} is bigger than ${num2}`);
+function printMax(nam1, nam2) {
+  if (nam1 > nam2) {
+    console.log(`${nam1}is greater than ${nam2}`);
   } else {
-    console.log(`${num2} is bigger than ${num1}`);
+    console.log(`${nam2}is greater than ${nam1}`);
   }
+  console.log(`${Math.max(nam1, nam2)} is bigger`);
 }
-printMax(399, 67);
+printMax(12, 34);

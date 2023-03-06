@@ -23,23 +23,23 @@ greet("Ghizlane");
  */
 function isOdd(n) {
   // Your code here
-  if (n % 2 !== 0) {
+  if (n % 2 != 0) {
     return true;
   } else {
     return false;
   }
 }
-console.log(isOdd(23));
+console.log(isOdd(5));
 
 /**
  * oddsSmallerThan(n):
  * - receives a number n
  * - returns the number of ODD numbers smaller than n
  *
- * e.g.
- * oddsSmallerThan(7) -> 3
- * oddsSmallerThan(15) -> 7
- */
+//  * e.g.
+//  * oddsSmallerThan(7) -> 3
+//  * oddsSmallerThan(15) -> 7
+//  */
 function oddsSmallerThan(n) {
   // Your code here
 
@@ -71,4 +71,6 @@ function squareOrDouble(n) {
     return n * 2;
   }
 }
-console.log(squareOrDouble(4));
+let number = squareOrDouble(5);
+console.log(number);
+module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
