@@ -30,11 +30,11 @@ printAge(1987);
  * -- tr: it should print `Merhaba NAME`
  */
 function printHello(name, lan) {
-  if (lan == "en") {
+  if (lan === "en") {
     console.log(`Hello ${name}`);
-  } else if (lan == "es") {
+  } else if (lan === "es") {
     console.log(`Hola ${name}`);
-  } else if (lan == "fr") {
+  } else if (lan === "fr") {
     console.log(`Bonjour ${name}`);
   } else {
     console.log(`Merhaba ${name}`);

@@ -44,14 +44,20 @@ function oddsSmallerThan(n) {
   // Your code here
 
   let count = 0;
-  for (let i = n - 1; i > 0; i--) {
-    if (isOdd(i)) {
-      count++;
-    }
+  // for (let i = n - 1; i > 0; i--) {
+  //   if (isOdd(i)) {
+  //     count++;
+  //   }
+  // }
+  // return count;
+
+  if (isOdd(n)) {
+    count = (n - 1) / 2;
   }
+
   return count;
 }
-console.log(oddsSmallerThan(15));
+console.log(oddsSmallerThan(7));
 
 /**
  * squareOrDouble(n):
@@ -71,6 +77,6 @@ function squareOrDouble(n) {
     return n * 2;
   }
 }
-let number = squareOrDouble(5);
+let number = squareOrDouble(9);
 console.log(number);
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
