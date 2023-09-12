@@ -50,8 +50,10 @@ printHello("ghizlane", "fr");
 function printMax(nam1, nam2) {
   if (nam1 > nam2) {
     console.log(`${nam1}is greater than ${nam2}`);
-  } else {
+  } else if (nam2 > nam2) {
     console.log(`${nam2}is greater than ${nam1}`);
+  } else {
+    console.log("the numbers are equal");
   }
   console.log(`${Math.max(nam1, nam2)} is bigger`);
 }

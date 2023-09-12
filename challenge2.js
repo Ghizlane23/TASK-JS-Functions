@@ -23,11 +23,12 @@ greet("Ghizlane");
  */
 function isOdd(n) {
   // Your code here
-  if (n % 2 != 0) {
-    return true;
-  } else {
-    return false;
-  }
+  // if (n % 2 != 0) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+  return n % 2;
 }
 console.log(isOdd(5));
 
